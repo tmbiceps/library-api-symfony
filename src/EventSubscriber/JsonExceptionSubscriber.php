@@ -26,7 +26,6 @@ class JsonExceptionSubscriber implements EventSubscriberInterface
             $status = $e->getStatusCode();
         }
 
-        // minimalny JSON, żeby testy nie wywalały "decode error"
         $response = new JsonResponse([
             'error' => $e->getMessage(),
         ], $status);

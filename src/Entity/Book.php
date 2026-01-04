@@ -73,7 +73,6 @@ class Book
         return $this;
     }
 
-    /** @return Collection<int, Copy> */
     public function getCopies(): Collection
     {
         return $this->copies;
